@@ -1,0 +1,50 @@
+.header-controls {
+  padding: 20px 0;
+}
+
+.thumb-wrapper {
+  position: relative;
+  top: 50%;
+  max-height: 65px;
+  overflow-y: hidden;
+  border-radius: 3px;
+}
+.post-title-list {
+  color: grey;
+}
+
+.list-group-item {
+  position: relative;
+  box-shadow: 0 0 4px lightgrey;
+  margin: 0 0 10px;
+  transition: box-shadow 0.3s, margin 0.3s, bacground 0.5s;
+  min-height: 90px;
+
+  .view-link {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px grey;
+    margin: 15px 0;
+    background: rgba(250, 250, 250, 0.5);
+
+    .view-link {
+      display: block;
+    }
+  }
+}
+
+.last-updated-field {
+  color: lightgrey;
+  font-weight: 300;
+}
+
+.responsive-image {
+  width: 100%;
+  min-width: 100%;
+}
